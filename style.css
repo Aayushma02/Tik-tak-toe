@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-container{
+    height: 70%;
+    width: 45%;
+    background: black;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 2px;
+    padding: 2px;
+}
+
+.field{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}
+.field:hover{
+    cursor: pointer;
+    background: whitesmoke;
+}
